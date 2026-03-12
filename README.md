@@ -5,11 +5,10 @@ Customer retention is a major challenge in the banking industry. Identifying cus
 
 This project builds machine learning models to predict customer churn using behavioral transaction data and applies clustering techniques to segment customers based on engagement patterns. The analysis combines supervised learning for churn prediction and unsupervised learning for behavioral segmentation. 
 
-BA890 Project Paper
 
 The project uses the MBD-mini dataset (a subset of the Million Business Dataset) containing anonymized client transaction and interaction data.
 
-Project Objectives
+Project Objectives:
 
 Predict customer churn using transaction and behavioral data
 
@@ -19,13 +18,13 @@ Segment customers into behavioral groups using clustering techniques
 
 Provide actionable insights for customer retention strategies
 
-Dataset
+Dataset:
 
 The project uses the MBD-mini dataset from Hugging Face, which contains anonymized banking activity data. 
 
 BA890 Project Paper
 
-Data Sources
+Data Sources:
 
 1. detail/
 
@@ -49,7 +48,8 @@ Data was merged on:
 
 client_id
 month
-Methodology
+
+Methodology - 
 1. Data Preparation
 
 Extracted behavioral activity features from event logs
@@ -80,16 +80,10 @@ Transaction frequency metrics
 
 Numerical variables were standardized and missing values handled appropriately. 
 
-BA890 Project Paper
-
 Machine Learning Models
 Baseline Models
 
-Two baseline models were initially tested:
-
-Logistic Regression
-
-Random Forest
+Two baseline models were initially tested: Logistic Regression & Random Forest
 
 Baseline performance:
 
@@ -112,8 +106,6 @@ ROC-AUC: 0.974
 
 LightGBM also maintained strong performance using only the top 15 most important features, making it more efficient for deployment. 
 
-BA890 Project Paper
-
 Customer Segmentation (Clustering)
 
 To better understand customer behavior patterns, clustering techniques were applied.
@@ -127,15 +119,7 @@ Optimal clusters selected using Elbow Method
 Optimal Clusters: 4
 Silhouette Score: 0.22
 
-Customer segments identified different engagement patterns such as:
-
-high activity users
-
-moderate engagement users
-
-dormant or low activity users. 
-
-BA890 Project Paper
+Customer segments identified different engagement patterns such as: high activity users, moderate engagement users, dormant or low activity users. 
 
 Additional Clustering Methods
 DBSCAN / HDBSCAN
@@ -146,9 +130,7 @@ Agglomerative Clustering
 
 Hierarchical clustering produced similar segmentation results and provided additional interpretability through dendrogram analysis. 
 
-BA890 Project Paper
-
-Exploratory Data Analysis
+Exploratory Data Analysis - 
 
 Key insights from the analysis:
 
@@ -160,9 +142,8 @@ Customer segments showed different propensities for triggering churn targets.
 
 These insights help characterize customer groups for targeted retention strategies. 
 
-BA890 Project Paper
+Key Findings: 
 
-Key Findings
 Strong Churn Prediction
 
 LightGBM achieved high predictive performance:
@@ -183,9 +164,7 @@ Meaningful Customer Segmentation
 
 Clustering revealed four distinct behavioral segments with varying engagement and churn risk profiles. 
 
-BA890 Project Paper
-
-Business Impact
+Business Impact - 
 
 Banks can use this framework to:
 
@@ -197,7 +176,7 @@ Improve customer engagement strategies
 
 Optimize marketing resource allocation
 
-Future Improvements
+Future Improvements - 
 
 Potential extensions for this project include:
 
@@ -209,9 +188,7 @@ Implementing A/B testing for retention strategies
 
 Deploying the churn prediction model into production pipelines. 
 
-BA890 Project Paper
-
-Technologies Used
+Technologies Used - 
 
 Python
 
@@ -229,7 +206,7 @@ Matplotlib / Seaborn
 
 PCA for dimensionality reduction
 
-Notebook
+Notebook - 
 
 Colab notebooks used for this project:
 
