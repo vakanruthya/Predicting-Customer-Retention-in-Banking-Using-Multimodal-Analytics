@@ -1,14 +1,13 @@
 # Predicting-Customer-Retention-in-Banking-Using-Multimodal-Analytics
-Overview
+## Overview
 
 Customer retention is a major challenge in the banking industry. Identifying customers who are likely to churn allows financial institutions to proactively intervene and improve long-term customer value.
 
 This project builds machine learning models to predict customer churn using behavioral transaction data and applies clustering techniques to segment customers based on engagement patterns. The analysis combines supervised learning for churn prediction and unsupervised learning for behavioral segmentation. 
 
-
 The project uses the MBD-mini dataset (a subset of the Million Business Dataset) containing anonymized client transaction and interaction data.
 
-Project Objectives:
+## Project Objectives:
 
 Predict customer churn using transaction and behavioral data
 
@@ -18,13 +17,13 @@ Segment customers into behavioral groups using clustering techniques
 
 Provide actionable insights for customer retention strategies
 
-Dataset:
+## Dataset:
 
 The project uses the MBD-mini dataset from Hugging Face, which contains anonymized banking activity data. 
 
 BA890 Project Paper
 
-Data Sources:
+## Data Sources:
 
 1. detail/
 
@@ -49,7 +48,7 @@ Data was merged on:
 client_id
 month
 
-Methodology - 
+## Methodology - 
 1. Data Preparation
 
 Extracted behavioral activity features from event logs
@@ -130,7 +129,7 @@ Agglomerative Clustering
 
 Hierarchical clustering produced similar segmentation results and provided additional interpretability through dendrogram analysis. 
 
-Exploratory Data Analysis - 
+## Exploratory Data Analysis - 
 
 Key insights from the analysis:
 
@@ -142,7 +141,7 @@ Customer segments showed different propensities for triggering churn targets.
 
 These insights help characterize customer groups for targeted retention strategies. 
 
-Key Findings: 
+## Key Findings: 
 
 Strong Churn Prediction
 
@@ -164,7 +163,7 @@ Meaningful Customer Segmentation
 
 Clustering revealed four distinct behavioral segments with varying engagement and churn risk profiles. 
 
-Business Impact - 
+## Business Impact - 
 
 Banks can use this framework to:
 
@@ -176,7 +175,7 @@ Improve customer engagement strategies
 
 Optimize marketing resource allocation
 
-Future Improvements - 
+## Future Improvements - 
 
 Potential extensions for this project include:
 
@@ -188,7 +187,7 @@ Implementing A/B testing for retention strategies
 
 Deploying the churn prediction model into production pipelines. 
 
-Technologies Used - 
+## Technologies Used - 
 
 Python
 
@@ -206,7 +205,7 @@ Matplotlib / Seaborn
 
 PCA for dimensionality reduction
 
-Notebook - 
+## Notebook - 
 
 Colab notebooks used for this project:
 
@@ -214,7 +213,7 @@ https://colab.research.google.com/drive/1Qk59xEzFJLXxXcY4UCPqqZwYZA3tFxrN
 
 https://colab.research.google.com/drive/1EJLoAoORahIL0C3EXudZJd2nDC77GqCG
 
-References
+## References
 
 Bank Customer Churn Prediction Research Papers
 
